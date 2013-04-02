@@ -1,0 +1,52 @@
+@import "compass";
+@import "compass/reset";
+
+body {
+  background: #1B1B24;
+  color: #9391AC;
+  font-family: "helvetica neue", helvetica, arial, geneva, sans-serif;
+}
+
+a:link,
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  position: absolute;
+  width: 100%;
+  top: 30%;
+
+  font-family: hybrea;
+  font-size: 128px;
+  font-weight: normal;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: -0.16em;
+  text-align: center;
+
+  span {
+    position: relative;
+    top: 0;
+
+    -webkit-transition: all 0.5s linear;
+  }
+
+  &.fixed {
+    .o {
+      left: 0.32em;
+    }
+
+    .r {
+      left: -0.55em;
+    }
+  }
+}
+
+footer {
+  bottom: 12px;
+  position: absolute;
+  width: 100%;
+
+  text-align: center;
+}
