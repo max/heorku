@@ -1,6 +1,12 @@
 @import "compass";
 @import "compass/reset";
 
+@include font-face("hybrea", inline-font-files("hybrea.woff", woff));
+
+@mixin hybrea-font-stack {
+  font-family: hybrea, "helvetica neue", helvetica, arial, geneva, sans-serif;
+}
+
 body {
   background: #1B1B24;
   color: #9391AC;
@@ -15,10 +21,10 @@ a:visited {
 
 h1 {
   position: absolute;
-  width: 100%;
   top: 30%;
+  width: 100%;
 
-  font-family: hybrea;
+  @include hybrea-font-stack;
   font-size: 128px;
   font-weight: normal;
   -webkit-font-smoothing: antialiased;
